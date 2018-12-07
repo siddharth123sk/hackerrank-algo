@@ -1,0 +1,10 @@
+ArraySize = list(map(int, input().split()))
+ArrayFirstRow = list(map(int, input().split()))
+ArraySecondRow = list(map(int, input().split()))
+ArrayThirdRow = list(map(int, input().split()))
+
+PrimaryDiagonalSum = ArrayFirstRow[0] + ArraySecondRow[1] + ArrayThirdRow[2]
+SecondaryDiagonalSum = ArrayFirstRow[2] + ArraySecondRow[1] + ArrayThirdRow[0]
+
+SampleOutput = abs (PrimaryDiagonalSum - SecondaryDiagonalSum)
+print(SampleOutput)
