@@ -1,0 +1,16 @@
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+# Complete the compareTriplets function below.
+AlicePoints = 0
+BobPoints = 0
+for i in range(3):
+    if a[i] > b[i]:
+            AlicePoints = AlicePoints + 1
+    elif a[i] == b[i]:
+            AlicePoints = AlicePoints
+            BobPoints = BobPoints
+    else:
+            BobPoints = BobPoints + 1
+print(AlicePoints, BobPoints)
+
